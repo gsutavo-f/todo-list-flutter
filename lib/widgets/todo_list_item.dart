@@ -24,7 +24,7 @@ class TodoListItem extends StatelessWidget {
               },
               backgroundColor: Color(0xfffe4a49),
               foregroundColor: Colors.white,
-              icon: Icons.delete,
+              icon: Icons.delete_outline_rounded,
               label: 'Deletar',
             ),
           ],
@@ -40,7 +40,7 @@ class TodoListItem extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4.0),
-        color: Colors.grey[200],
+        color: Color(0xff292929),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -49,6 +49,7 @@ class TodoListItem extends StatelessWidget {
             DateFormat('dd/MM/yyyy - HH:mm').format(todo.date),
             style: TextStyle(
               fontSize: 12.0,
+              color: Color(0xff808080),
             ),
           ),
           Text(
@@ -56,6 +57,7 @@ class TodoListItem extends StatelessWidget {
             style: TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.w600,
+              color: Colors.white,
             ),
           ),
         ],
